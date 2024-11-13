@@ -4,11 +4,11 @@ nav {
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
-    color: #3865A8;
+    color: #EEEEEE;
     align-items: center;
     padding: 25px 0 25px 0;
     justify-content: space-between;
-    background-color: #EEEEEE;
+    background-color: transparent;
     position: fixed;
     z-index: 2;
 }
@@ -20,11 +20,11 @@ nav {
 }
 
 .home-btn>svg>path {
-    fill: #3865A8;
+    fill: #EEEEEE;
 }
 
 .home-btn>p {
-    color: #3865A8;
+    color: #EEEEEE;
     font-family: 'Capsuula', serif;
     font-size: 34px;
     letter-spacing: -1.04px;
@@ -47,7 +47,7 @@ button {
 }
 
 .arrow {
-    stroke: #3865A8;
+    stroke: #EEEEEE;
 }
 
 .drop-btn>svg {
@@ -112,7 +112,7 @@ a {
 }
 
 .dropdown-content>a:hover {
-    background-color: #3865A8;
+    background-color: #EEEEEE;
     border-radius: 6px;
     color: #EEEEEE;
 }
