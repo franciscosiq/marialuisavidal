@@ -1,7 +1,7 @@
 nav {
     display: flex;
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 17px;
     color: #EEEEEE;
@@ -60,7 +60,7 @@ a {
 }
 
 .central-btns> a:hover {
-    color: #2A4773;
+    color: #3865A8;
 }
 
 .zap-btn {
@@ -108,7 +108,14 @@ a {
 }
 
 .dropdown:hover .drop-btn {
-    color: #2A4773;
+    color: #3865A8;
+}
+
+.white-color {
+    background-color: #EEEEEE;
+    color: #EEEEEE;
+    stroke: #EEEEEE;
+    fill: #EEEEEE;
 }
 
 .dropdown-content>a:hover {

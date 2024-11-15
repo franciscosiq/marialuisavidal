@@ -24,7 +24,7 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <div className="dropdown-content">
-                        <Link to="/">Últimos Artigos</Link>
+                        <Link to="/">Em destaque</Link>
                         <Link to="/artigos">Todos os Artigos</Link>
                     </div>
                 </div>
