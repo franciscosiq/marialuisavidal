@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+// tentar fazer um negocio para retornar um estilo diretamente em um elmento, exemplo seria um P, trocar a cor dele
+const uaa:boolean = true;
+if (uaa == true){
+
+} else {
+
+}
+
 const Navbar = () => {
     return (
         <nav className="container">

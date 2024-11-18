@@ -1,16 +1,18 @@
 nav {
     display: flex;
     font-family: "Poppins", serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 17px;
-    color: #3865A8;
-    align-items: center;
-    padding: 25px 0 25px 0;
-    justify-content: space-between;
-    background-color: #EEEEEE;
+    color: #EEEEEE;
+    padding: 25px 100% 25px 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
     position: fixed;
     z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 rgba(220, 225, 231, 0.05);
 }
 
 .home-btn {
@@ -20,11 +22,11 @@ nav {
 }
 
 .home-btn>svg>path {
-    fill: #3865A8;
+    fill: #EEEEEE;
 }
 
 .home-btn>p {
-    color: #3865A8;
+    color: #EEEEEE;
     font-family: 'Capsuula', serif;
     font-size: 34px;
     letter-spacing: -1.04px;
@@ -38,7 +40,7 @@ nav {
 
 button {
     background: none;
-    color: inherit;
+    color: #EEEEEE;
     border: none;
     padding: 0;
     font: inherit;
@@ -47,7 +49,7 @@ button {
 }
 
 .arrow {
-    stroke: #3865A8;
+    stroke: #EEEEEE;
 }
 
 .drop-btn>svg {
@@ -55,12 +57,12 @@ button {
 }
 
 a {
-    color: inherit;
     text-decoration: inherit;
+    color: #EEEEEE;
 }
 
 .central-btns> a:hover {
-    color: #2A4773;
+    opacity: 50%;
 }
 
 .zap-btn {
@@ -71,14 +73,33 @@ a {
     background-color: #0CC042;
     border-radius: 6px;
     padding: 7px 19px 7px 19px;
+    position: relative;
+    overflow: hidden;
+}
+
+.zap-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #0A9B3A;
+    transition: 0.3s ease;
+}
+
+.zap-btn:hover::before {
+    left: 0;
 }
 
 .zap-btn>svg {
     margin-right: 10px;
+    z-index: 3;
 }
 
 .zap-btn>p {
     margin: 0;
+    z-index: 3;
 }
 
 .dropdown {
@@ -96,7 +117,7 @@ a {
     display: none;
     position: absolute;
     min-width: 160px;
-    background-color: rgba(89, 138, 197, 0.13);
+    background: #EEEEEE;
     border-radius: 6px;
 }
 
@@ -105,16 +126,17 @@ a {
     padding: 7px 19px;
     display: block;
     text-align: left;
+    color: #000000;
 }
 
 .dropdown:hover .drop-btn {
-    color: #2A4773;
+    opacity: 50%;
 }
 
 .dropdown-content>a:hover {
-    background-color: #3865A8;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    color: #EEEEEE;
+    color: #000000;
 }
 
 .dropdown:hover .dropdown-content {
