@@ -89,7 +89,7 @@
 }
 
 #content {
-    margin-top: 125px;
+    margin-top: 30px;
 }
 
 #featured-articles {
@@ -122,6 +122,7 @@
     border-radius: 7px;
     object-fit: cover;
     width: 100%;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .article>div>a>h2 {
