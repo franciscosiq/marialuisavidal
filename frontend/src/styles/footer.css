@@ -1,6 +1,6 @@
 footer {
     margin-top: 30px;
-    background: #DDE1E8;
+    background: rgba(56, 101, 168, 0.1);
     padding: 40px 0 0 0;
     width: 100%;
 }
@@ -55,7 +55,7 @@ footer {
 }
 
 .footer-links>div>div>a {
-    color: #4C4C4C;
+    color: #818181;
     font-size: 17px;
     font-weight: 500;
     margin: 0 0 10px 0;
@@ -76,7 +76,7 @@ footer>div>a {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #4C4C4C;
+    color: #818181;
     font-size: 17px;
     font-weight: 500;
 }

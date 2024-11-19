@@ -7,7 +7,7 @@ nav {
     color: #EEEEEE;
     padding: 25px 100% 25px 100%;
     background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
     position: fixed;
     z-index: 2;
     align-items: center;
