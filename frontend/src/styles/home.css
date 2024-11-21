@@ -219,10 +219,11 @@
 
 .team-section>button {
     display: flex;
-    background: linear-gradient(118deg, rgba(56,101,168,0) 0%, rgba(56,101,168,0.1) 100%);
+    background: linear-gradient(100deg, rgba(56,101,168,0) 0%, rgba(56,101,168,0.1) 100%);
     border-radius: 7px;
     position: relative;
     overflow: hidden;
+    /*adicinar height para media queries*/
     width: 440px;
     margin-right: 30px;
     justify-content: flex-end;
@@ -238,6 +239,7 @@
     z-index: 1;
     left: 0;
     bottom: 0;
+    fill: #EEEEEE;
 }
 
 .team-section>button>div>img {
@@ -271,7 +273,7 @@
 
 .mlv-text-button>div>p {
     font-weight: 600;
-    color: #4C4C4C;
+    color: #818181;
     font-size: 16px;
     margin: 0 5px 0 0;
 }
