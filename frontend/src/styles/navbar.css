@@ -1,32 +1,96 @@
 nav {
+    position: fixed;
+    z-index: 9;
+}
+
+nav>section:first-child {
     display: flex;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
     color: #EEEEEE;
-    padding: 25px 100% 25px 100%;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(50px);
-    position: fixed;
-    z-index: 9;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 1px 0 rgba(220, 225, 231, 0.05);
+}
+
+.not-visible {
+    display: none;
+}
+
+.central-btns-hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 17px;
+    background: #EEEEEE;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.central-btns-hamburguer>a {
+    color: #3865A8;
+    padding: 5px;
+    margin: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.central-btns-hamburguer>a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-bg-blur {
+    padding: 35px 100% 25px 100%;
+}
+
+.nav-bg-white {
+    background: #EEEEEE;
+    padding: 25px 100% 25px 100%;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.1));
+}
+
+.blue-background-color {
+    background-color: #3865A8;
+}
+
+.blue-fill {
+    fill: #3865A8;
+}
+
+.blue-color {
+    color: #3865A8;
+}
+
+.blue-stroke {
+    stroke: #3865A8;
+}
+
+.white-background-color {
+    background-color: #EEEEEE;
+}
+
+.white-fill {
+    fill: #EEEEEE;
+}
+
+.white-color {
+    color: #EEEEEE;
+}
+
+.white-stroke {
+    stroke: #EEEEEE;
 }
 
 .home-btn {
     display: flex;
     align-items: center;
-    height: 35.48px;
-}
-
-.home-btn>svg>path {
-    fill: #EEEEEE;
+    height: 36px;
 }
 
 .home-btn>p {
-    color: #EEEEEE;
     font-family: 'Capsuula', serif;
     font-size: 34px;
     letter-spacing: -1.04px;
@@ -38,18 +102,13 @@ nav {
     gap: 30px;
 }
 
-button {
+.drop-btn {
     background: none;
-    color: #EEEEEE;
     border: none;
     padding: 0;
     font: inherit;
     cursor: pointer;
     outline: inherit;
-}
-
-.arrow {
-    stroke: #EEEEEE;
 }
 
 .drop-btn>svg {
@@ -58,7 +117,6 @@ button {
 
 a {
     text-decoration: inherit;
-    color: #EEEEEE;
 }
 
 .central-btns> a:hover {
@@ -126,7 +184,6 @@ a {
     padding: 7px 19px;
     display: block;
     text-align: left;
-    color: #000000;
 }
 
 .dropdown:hover .drop-btn {
@@ -143,6 +200,41 @@ a {
     display: block;
 }
 
-@media screen and (max-width: 1080px) {
+#menu-hamburguer {
+    display: none;
+}
 
+@media screen and (max-width: 1080px) {
+    #menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #bar1, #bar2 {
+        margin-bottom: 5px;
+    }
+
+    #bar1, #bar2, #bar3 {
+        width: 32px;
+        height: 6px;
+        border-radius: 6px;
+    }
+
+    .central-btns {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .zap-btn {
+        padding: 8px 10px 8px 10px;
+    }
+
+    .zap-btn>p {
+        display: none;
+    }
+
+    .zap-btn>svg {
+        margin: 0;
+    }
 }
