@@ -32,7 +32,7 @@ nav>section:first-child {
 }
 
 .central-btns-hamburguer>a {
-    color: #3865A8;
+    color: #484490;
     padding: 5px;
     margin: 0;
     border-radius: 6px 0 0 6px;
@@ -53,19 +53,19 @@ nav>section:first-child {
 }
 
 .blue-background-color {
-    background-color: #3865A8;
+    background-color: #484490;
 }
 
 .blue-fill {
-    fill: #3865A8;
+    fill: #484490;
 }
 
 .blue-color {
-    color: #3865A8;
+    color: #484490;
 }
 
 .blue-stroke {
-    stroke: #3865A8;
+    stroke: #484490;
 }
 
 .white-background-color {
@@ -186,14 +186,12 @@ a {
     text-align: left;
 }
 
-.dropdown:hover .drop-btn {
-    opacity: 50%;
-}
+
 
 .dropdown-content>a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    color: #000000;
+    color: #484490;
 }
 
 .dropdown:hover .dropdown-content {

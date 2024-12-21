@@ -54,7 +54,7 @@ button {
 .slogan>div{
     max-width: 620px;
     height: 11px;
-    background: linear-gradient(90deg, rgba(191,84,134,1) 0%, rgba(56,101,168,1) 100%);
+    background: linear-gradient(90deg, rgb(221, 157, 194) 0%, rgb(72, 68, 144) 100%);
     border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -87,7 +87,7 @@ button {
 .more-details-btn {
     position: absolute;
     bottom: 0;
-    background-color: #3865A8;
+    background-color: #484490;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 2px 16px 5px 16px;
@@ -100,7 +100,7 @@ button {
     bottom: 0;
     width: 100%;
     border: 0;
-    border-top: 5px solid #3865A8;
+    border-top: 5px solid #484490;
     margin: 0;
 }
 
@@ -161,7 +161,7 @@ button {
     font-weight: 500;
     border-radius: 5px;
     padding: 8px 0 8px 0;
-    background-color: #3865A8;
+    background-color: #484490;
     color: #EEEEEE;
 }
 
@@ -187,7 +187,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: rgba(56, 101, 168, 0.1);
+    background: rgba(72, 68, 144, 0.1);
     border-radius: 7px;
     margin-bottom: 16px;
 }
@@ -225,7 +225,7 @@ button {
 .secondary-text-h2 {
     font-weight: 600;
     font-size: 18px;
-    color: #3865A8;
+    color: #484490;
     font-family: "Poppins", serif;
 }
 
@@ -242,11 +242,10 @@ button {
 
 .team-section>button {
     display: flex;
-    background: linear-gradient(100deg, rgba(56,101,168,0) 0%, rgba(56,101,168,0.1) 100%);
+    background: linear-gradient(100deg, rgba(72, 68, 144, 0) 0%, rgba(72, 68, 144, 0.1) 100%);
     border-radius: 7px;
     position: relative;
     overflow: hidden;
-    /*adicinar height para media queries*/
     width: 440px;
     margin-right: 20px;
     justify-content: flex-end;
@@ -290,7 +289,7 @@ button {
 
 .mlv-text-button>h2 {
     margin: 0;
-    color: #3865A8;
+    color: #484490;
     font-size: 30px;
 }
 
@@ -315,7 +314,7 @@ button {
 .description-balloon {
     max-width: 680px;
     border-radius: 7px;
-    background: rgba(56, 101, 168, 0.1);
+    background: rgba(72, 68, 144, 0.1);
 }
 
 .description-balloon>p {
@@ -336,11 +335,12 @@ button {
 }
 
 .category {
+    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     height: 190px;
     border-radius: 7px;
-    box-shadow: 0 5px 0 #BF5486;
+    box-shadow: 0 5px 0 #DD9DC2;
 }
 
 .category-title {
@@ -369,6 +369,10 @@ button {
     .carousel>button:last-child {
         margin-left: 7px;
     }
+
+    .team-section>button {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -390,6 +394,63 @@ button {
     }
 
     .arrow-btn {
+        display: none;
+    }
+
+    .area-of-activity-dropdown>button>div>div>svg {
+        display: none;
+    }
+
+    .area-of-activity-dropdown>button>div>div>h2 {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: left;
+    }
+
+    .team-section {
+        flex-direction: column;
+    }
+
+    .team-section>button {
+        height: 250px;
+    }
+
+    .mlv-text-button {
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+
+    .mlv-text-button>h2 {
+        line-height: 90%;
+    }
+
+    .area-of-activity-dropdown>button>div>svg {
+        min-width: 25px;
+    }
+
+    .category>h2 {
+        font-size: 25px;
+    }
+
+    #contacts-and-additional-information>h2 {
+        font-size: 22px;
+    }
+
+    .category {
+        height: 100px;
+        align-items: center;
+    }
+
+    .category-title {
+        padding-top: 0;
+    }
+
+    .article>div {
+        flex-direction: column;
+    }
+
+    .article>div:last-child {
         display: none;
     }
 }

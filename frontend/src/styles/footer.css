@@ -1,6 +1,6 @@
 footer {
     margin-top: 30px;
-    background: rgba(56, 101, 168, 0.1);
+    background: rgba(72, 68, 144, 0.1);
     padding: 40px 0 0 0;
     width: 100%;
 }
@@ -9,7 +9,7 @@ footer {
     font-weight: 900;
     font-size: 17px;
     font-style: italic;
-    color: #3865A8;
+    color: #484490;
 }
 
 .footer-links {
@@ -68,7 +68,7 @@ footer {
 footer>div>hr {
     margin-top: 30px;
     margin-bottom: 0;
-    border-top: 1px solid #3865A8;
+    border-top: 1px solid #484490;
 }
 
 footer>div>a {

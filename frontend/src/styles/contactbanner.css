@@ -1,6 +1,5 @@
 .whatsapp-contact-banner {
     background: #D8EADE;
-    height: 190px;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -31,6 +30,18 @@
     }
 }
 
+@keyframes elasticBoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 .whatsapp-contact-banner>svg {
     padding: 10px 13px 10px 13px;
     background: #0CC042;
@@ -49,16 +60,18 @@
     margin: 3px 0 0 0;
     line-height: 120%;
     animation: elasticBoom 3s ease-in-out infinite;
+    margin-bottom: 40px;
 }
 
-@keyframes elasticBoom {
-    0% {
-        transform: scale(1);
+@media screen and (max-width: 735px) {
+    .whatsapp-contact-banner>h2 {
+        font-size: 25px;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: center;
     }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
+
+    .whatsapp-contact-banner>p {
+        font-size: 16px;
     }
 }
